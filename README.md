@@ -27,10 +27,12 @@ An aesthetic, responsive, and performance-optimized developer portfolio showcasi
 * Python 3.8 or higher installed on your system.
 
 ### 1. Installation
-Clone the repository and install the backend dependencies:
+Clone the repository and install the backend dependency:
 ```bash
-pip install -r requirements.txt
+pip install Flask
 ```
+
+> Note: this repository does not currently include a `requirements.txt` file.
 
 ### 2. Running the Development Server
 Execute the Flask server:
@@ -38,20 +40,19 @@ Execute the Flask server:
 python app.py
 ```
 By default, the server will spin up on:
-👉 **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
+👉 **http://127.0.0.1:5000**
 
 ---
 
 ## 📂 Project Structure
 ```text
 Portfolio/
-├── app.py                # Flask main router and project APIs
-├── requirements.txt      # Dependency specification
+├── app.py                # Flask main router, route handlers, and API endpoints
 ├── static/
 │   ├── css/
 │   │   └── style.css     # CSS rules, themes, glassmorphism, and responsive timeline styles
 │   └── js/
-│       └── app.js        # Form handling, theme toggling, scroll reveals, and project api loading
+│       └── app.js        # Form handling, theme toggling, scroll reveals, and project API loading
 └── templates/
     └── index.html        # Main dynamic rendering HTML view (with Jinja templates)
 ```

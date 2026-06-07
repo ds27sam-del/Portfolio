@@ -7,11 +7,14 @@ Welcome to the developers' manual for the portfolio project. This document detai
 ## 1. Workspace & Architecture
 
 This application is built as a lightweight, dynamic **Flask Single-Page Application (SPA)**. 
-* **Backend (`app.py`)**: Responsible for serving the main routing paths, parsing static resources, and serving a local JSON-based API endpoint `/api/projects` that lists project properties.
+* **Backend (`app.py`)**: Responsible for serving the main routing paths, parsing static resources, and serving local JSON-based API endpoints:
+  - `/api/projects` for project data
+  - `/api/contact` for contact form submissions
 * **Server Binding**: Configured to run locally on `127.0.0.1:5000` with debugger mode enabled.
-* **Requirements (`requirements.txt`)**: 
-  - `Flask==3.0.3` (Routing engine)
-  - `python-dotenv==1.0.1` (Environment configuration loader)
+* **Dependencies**:
+  - `Flask` (Routing engine and template rendering)
+
+> Note: there is no `requirements.txt` file in this repository at the moment.
 
 ---
 
@@ -21,7 +24,6 @@ This application is built as a lightweight, dynamic **Flask Single-Page Applicat
 d:\Portfolio\
 │
 ├── app.py                      # Flask Application Entry Point
-├── requirements.txt            # Python Dependencies
 ├── README.md                   # Setup Guide for Users
 ├── DEVELOPER.md                # Technical Documentation (This file)
 │

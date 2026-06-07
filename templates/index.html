@@ -292,12 +292,34 @@
             </div>
 
             <!-- Category Filter Controls -->
-            <div class="filters reveal">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                 <button class="filter-btn" data-filter="systems">Systems</button>
-                <button class="filter-btn" data-filter="databases">Databases</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="core-logic">Core Logic</button>
+            <div class="filters-container reveal">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <span class="btn-icon">📂</span>
+                        <span class="btn-text">All Projects</span>
+                        <span class="project-count" id="count-all">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="systems">
+                        <span class="btn-icon">⚙️</span>
+                        <span class="btn-text">Systems</span>
+                        <span class="project-count" id="count-systems">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="databases">
+                        <span class="btn-icon">🗄️</span>
+                        <span class="btn-text">Databases</span>
+                        <span class="project-count" id="count-databases">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        <span class="btn-icon">🌐</span>
+                        <span class="btn-text">Web Apps</span>
+                        <span class="project-count" id="count-web">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="core-logic">
+                        <span class="btn-icon">🧠</span>
+                        <span class="btn-text">Core Logic</span>
+                        <span class="project-count" id="count-core-logic">0</span>
+                    </button>
+                </div>
             </div>
 
             <!-- Projects Grid -->

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saumya Kumar Panwar &bull; Premium Tech Portfolio</title>
+    <meta name="description"
+        content="Explore the software systems, relational database architecture, and dynamic web applications built by Saumya Kumar Panwar. A premium interactive developer portfolio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- Glow Background Blobs -->
+    <div class="glow-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Sam<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">
+                    <!-- Moon icon for light mode (turns dark) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <!-- Sun icon for dark mode (turns light) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="mobile-nav-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#journey" class="mobile-link">Journey</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content fade-in">
+                <span class="badge">Software Developer & Data Systems Architect</span>
+                <h1>Designing Productive Applications <span class="gradient-text">Effecient and Effective</span></h1>
+                <p class="lead">I am a Computer Science student passionate about building functional applications that solve real-world data problems. Specializing in Python, Data Management Systems, and creating intuitive user interfaces.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in delay-1">
+                <!-- Premium card mockup -->
+                <div class="glass-card visual-card">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="window-title">Sam_core.cpp</span>
+                    </div>
+                    <div class="code-preview">
+                        <pre><code><span class="keyword">#include</span> <span class="string">&lt;iostream&gt;</span>
+<span class="keyword">#include</span> <span class="string">&lt;vector&gt;</span>
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="type">auto</span> engine = Sam::Engine::<span class="function">Create</span>();
+    engine-><span class="function">initialize</span>({
+        .<span class="property">raytracing</span> = <span class="keyword">true</span>,
+        .<span class="property">concurrency</span> = <span class="number">16</span>
+    });
+    engine-><span class="function">run</span>();
+    <span class="keyword">return</span> <span class="number">0</span>;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-header reveal">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>Engineering with Craftsmanship</h3>
+                    <p> I am a computer science student and software development enthusiast focused on building clean, structured applications backed by efficient logic. Whether it's optimization of C++ applications, designing robust relational database systems, or crafting multi-page web apps with Flask, I prioritize clean execution and performance. My work lies at the intersection of practical backend design and core computer science fundamentals.</p>
+
+                    <div class="skills-category">
+                        <h4>Core Expertise</h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">Systems programming (C++, OOP,DSA)</span>
+                            <span class="skill-tag">Backend Architecture (Python, Flask, SQL,DBMS </span>
+                            <span class="skill-tag">Graphics (HTML5, CSS3, Responsive Design)</span>
+                            <span class="skill-tag">Project Workflow (Git, GitHub Version Control)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats reveal delay-1">
+                    <div class="glass-card stat-card">
+                        <span class="stat-number">1st Year</span>
+                        <span class="stat-label">BCA Student</span>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Logical-Driven</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey time line -->
+         <!-- Journey Timeline Section -->
+        <section class="journey" id="journey">
+            <div class="section-header reveal">
+                <h2>My Journey</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="timeline-container">
+        <!-- Timeline Line -->
+            <div class="timeline-line"></div>
+
+        <!-- Phase 1 & 2 -->
+        <div class="timeline-item reveal">
+            <div class="timeline-dot">
+                <div class="dot-inner"></div>
+            </div>
+            <div class="glass-card timeline-card">
+                <span class="timeline-date">Phase 1 & 2 &bull; Pre-College</span>
+                <h3>🌿 Early Roots</h3>
+                <p class="timeline-journey">
+                    Before code became a career path, it was pure curiosity. Driven by a desire to understand how applications organize information under the hood, this period was about testing the waters and grasping the mental models of databases.
+                </p>
+                <div class="timeline-details">
+                    <span class="detail-label">Focus:</span>
+                    <span class="detail-val">Relational database fundamentals</span>
+                </div>
+                <div class="timeline-tech">
+                    <span class="proj-tag">DBMS Basics</span>
+                    <span class="proj-tag">SQL</span>
+                    <span class="proj-tag">Relational Schemas</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="timeline-item reveal">
+            <div class="timeline-dot">
+                <div class="dot-inner"></div>
+            </div>
+            <div class="glass-card timeline-card">
+                <span class="timeline-date">Phase 3 &bull; Self-Study</span>
+                <h3>⚡ The Free Will Period</h3>
+                <p class="timeline-journey">
+                    Stepping outside the confines of a structured curriculum. This was a phase of pure self-directed exploration—learning how to read documentation, debug errors, and think like a builder through trial, error, and repetition.
+                </p>
+                <div class="timeline-details">
+                    <span class="detail-label">Focus:</span>
+                    <span class="detail-val">Logic building blocks & problem-solving frameworks</span>
+                </div>
+                <div class="timeline-tech">
+                    <span class="proj-tag">Scripting</span>
+                    <span class="proj-tag">Control Flow</span>
+                    <span class="proj-tag">Logic Iterations</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="timeline-item reveal">
+            <div class="timeline-dot">
+                <div class="dot-inner"></div>
+            </div>
+            <div class="glass-card timeline-card">
+                <span class="timeline-date">Phase 4 &bull; BCA Semester 1</span>
+                <h3>💻 The Mother Tongue</h3>
+                <p class="timeline-journey">
+                    Entering formal computer science, I chose to strip away modern abstractions. Believing that a true developer understands the machine from the metal up, I adopted C as my mother tongue—embracing pointers, memory addresses, and procedural logic.
+                </p>
+                <div class="timeline-details">
+                    <span class="detail-label">Focus:</span>
+                    <span class="detail-val">Low-level systems foundations & raw execution</span>
+                </div>
+                <div class="timeline-tech">
+                    <span class="proj-tag">C Language</span>
+                    <span class="proj-tag">Pointers</span>
+                    <span class="proj-tag">Memory Management</span>
+                    <span class="proj-tag">Procedural Logic</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 5 -->
+        <div class="timeline-item reveal">
+            <div class="timeline-dot">
+                <div class="dot-inner"></div>
+            </div>
+            <div class="glass-card timeline-card">
+                <span class="timeline-date">Phase 5 &bull; BCA Semester 2</span>
+                <h3>🚀 Scaling Up</h3>
+                <p class="timeline-journey">
+                    Moving from procedural syntax to complex data structures. This semester was about managing scale—upgrading to C++ to master Object-Oriented Programming (OOP) and Data Structures (DSA), while simultaneously deep-diving into relational databases.
+                </p>
+                <div class="timeline-details">
+                    <span class="detail-label">Focus:</span>
+                    <span class="detail-val">Data models, OOP structures & relational schemas</span>
+                </div>
+                <div class="timeline-tech">
+                    <span class="proj-tag">C++</span>
+                    <span class="proj-tag">DSA</span>
+                    <span class="proj-tag">SQL</span>
+                    <span class="proj-tag">MS Access</span>
+                    <span class="proj-tag">Joins & Integrity</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Focus & Future -->
+        <div class="timeline-item reveal">
+            <div class="timeline-dot">
+                <div class="dot-inner"></div>
+            </div>
+            <div class="glass-card timeline-card future-card">
+                <span class="timeline-date">Current &bull; Future Focus</span>
+                <h3>🛰️ June 25th Milestone & BCA Year 2</h3>
+                <p class="timeline-journey">
+                    Continuous daily execution. Currently practicing sequence-based coding challenges to keep logical reflexes sharp, while bridging my systems-level knowledge into web architectures as I transition into BCA Second Year.
+                </p>
+                <div class="timeline-details">
+                    <span class="detail-label">Focus:</span>
+                    <span class="detail-val">Web architectures, routing & dynamic backends</span>
+                </div>
+                <div class="timeline-tech">
+                    <span class="proj-tag">Python</span>
+                    <span class="proj-tag">Flask</span>
+                    <span class="proj-tag">HTML5</span>
+                    <span class="proj-tag">CSS3</span>
+                    <span class="proj-tag">Sequence Logic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-header reveal">
+                <h2>Featured Projects</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Category Filter Controls -->
+            <div class="filters reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                 <button class="filter-btn" data-filter="systems">Systems</button>
+                <button class="filter-btn" data-filter="databases">Databases</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="core-logic">Core Logic</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid reveal" id="projects-container">
+                <!-- Project cards will be loaded here dynamically from backend -->
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header reveal">
+                <h2>Get in Touch</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-container reveal">
+                <div class="contact-info">
+                    <h3>Let's Build Something Exceptional</h3>
+                    <p>I am always open to discussing structured backend architectures, interesting algorithmic problems, or collaborations on full-stack projects. Drop a line if you want to chat about code or review a repository layout.</p>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>ds27sam@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                stroke-width="2" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Solan, Himachal Pradesh, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form id="contact-form" class="glass-card contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Isaac Newton">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="newton@principia.org">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tell me about your project or inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <div class="spinner btn-spinner hidden"></div>
+                    </button>
+                    <div id="form-feedback" class="form-feedback hidden"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>
+                &copy; 2026 Saumya Kumar Panwar. All rights reserved. 
+                <span class="footer-credits">Design inspired by Antigravity &bull; Built with Flask & Vanilla CSS</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>

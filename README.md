@@ -1,58 +1,80 @@
-# 🌌 Saumya's Premium Tech Portfolio (v2)
+# Premium Developer Portfolio
 
-An aesthetic, responsive, and performance-optimized developer portfolio showcasing software engineering journey, academic milestones, and core projects. Built using a backend dynamic rendering model with **Flask** and styled with a custom **Vanilla CSS Glassmorphic design**.
+A dynamic, premium personal portfolio for **Saumya Kumar Panwar** built with a Flask backend and an interactive vanilla HTML/CSS/JS frontend.
 
----
+## 🌟 Features
 
-## ⚡ Features
-* **Obsidian-Cyber Theme**: Deep obsidian background with cyber-indigo and electric cyan highlights.
-* **Interactive Journey Timeline**: Chronological interactive visual timeline mapping growth phases (Pre-College, Self-Study, BCA Semesters, and Web-Scale targets).
-* **Dynamic Projects Section**: Dynamically fetches projects from Flask backend API with responsive filter selectors.
-* **Smooth-Scroll & Intersection Reveals**: Micro-animations and slide-in animations triggered on scroll using modern `IntersectionObserver` JS.
-* **Seamless Dark/Light Mode**: Local-storage persisted theme switcher with matching CSS tokens.
-* **Asynchronous Contact Form**: Modern AJAX contact form with spinner loading indicators and custom input validation.
-
----
+- **Modern UI/UX**: Dark-themed glassmorphism aesthetic with subtle animations and micro-interactions.
+- **Dynamic Projects System**: Projects are served via a JSON REST API (`/api/projects`) from the Flask backend, complete with real-time category filtering.
+- **Theme Toggle**: Fully functional Dark/Light mode switch that persists via `localStorage`.
+- **Responsive Design**: Fluid layout that adapts seamlessly to desktop, tablet, and mobile devices.
+- **Interactive Timeline**: A scroll-revealed timeline detailing the journey from raw C and procedural logic up to modern web architectures.
+- **Smart Project Cards**: Custom-colored badges based on language (Python, C++, SQL, HTML) and tabbed interfaces for multi-implementation projects (like the C/C++/Python Calculator).
 
 ## 🛠️ Technology Stack
-* **Backend**: Python, Flask, Jinja2 Templates
-* **Frontend**: HTML5, Vanilla CSS3 (Custom Glassmorphism), Modern ES6 JavaScript
-* **Database Models**: Dynamic JSON objects parsed in Flask (ready for SQLite/PostgreSQL migration)
 
----
+- **Backend**: Python 3, Flask
+- **Frontend**: HTML5, CSS3 (Vanilla, Variables), JavaScript (ES6+, Fetch API)
+- **Design System**: Custom CSS with CSS Grid/Flexbox, Intersection Observers for scroll animations.
 
-## 🚀 Setup & Execution
+## 🚀 Getting Started
 
 ### Prerequisites
-* Python 3.8 or higher installed on your system.
+- Python 3.x installed on your system.
 
-### 1. Installation
-Clone the repository and install the backend dependency:
-```bash
-pip install Flask
-```
+### Installation
 
-> Note: this repository does not currently include a `requirements.txt` file.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ds27sam-del/Portfolio.git
+   cd Portfolio
+   ```
 
-### 2. Running the Development Server
-Execute the Flask server:
-```bash
-python app.py
-```
-By default, the server will spin up on:
-👉 **http://127.0.0.1:5000**
+2. **Set up a virtual environment (optional but recommended)**:
+   ```bash
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
 
----
+3. **Install Flask**:
+   ```bash
+   pip install flask
+   ```
+
+4. **Run the application**:
+   ```bash
+   python app.py
+   ```
+
+5. **View the portfolio**:
+   Open your web browser and navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
 ## 📂 Project Structure
+
 ```text
 Portfolio/
-├── app.py                # Flask main router, route handlers, and API endpoints
+├── app.py                 # Main Flask application and API routes
 ├── static/
 │   ├── css/
-│   │   └── style.css     # CSS rules, themes, glassmorphism, and responsive timeline styles
+│   │   └── style.css      # Core design system and animations
 │   └── js/
-│       └── app.js        # Form handling, theme toggling, scroll reveals, and project API loading
+│       └── app.js         # Frontend logic (Observer, Fetch, DOM manipulations)
 └── templates/
-    └── index.html        # Main dynamic rendering HTML view (with Jinja templates)
+    └── index.html         # Main HTML layout and structural components
 ```
+
+## 📬 Contact Form API
+The contact form uses a modern asynchronous `fetch` POST request to the `/api/contact` endpoint, providing real-time UI feedback (success/error banners and loading spinners) without needing page reloads.
+
+## 👨‍💻 About the Author
+
+**Saumya Kumar Panwar (Sam)**
+- Location: Solan, Himachal Pradesh, India
+- Role: CS Student · Software Developer · Data Systems Architect
+- GitHub: [@ds27sam-del](https://github.com/ds27sam-del)
+
+---
+*Designing Productive Applications — Efficient and Effective.*
